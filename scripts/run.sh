@@ -7,7 +7,6 @@ fi
 if [ ! -f /.ldap_configured ]; then
 	/root/.scripts/config_ldap.sh
 fi
-
+/usr/sbin/nslcd
 #exec /usr/sbin/init
 exec /usr/sbin/sshd -D
-exec /usr/sbin/nslcd
