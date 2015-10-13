@@ -25,7 +25,7 @@ RUN yum -y install openssh-server openldap openldap-clients nss-pam-ldapd authco
 ADD scripts /root/.scripts
 RUN chmod +x /root/.scripts/*.sh
 
-VOLUME [ "/sys/fs/cgroup" ]
+#VOLUME [ "/sys/fs/cgroup" ]
 
 EXPOSE 22
 CMD ["/root/.scripts/run.sh"]
