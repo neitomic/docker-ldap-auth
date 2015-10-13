@@ -20,8 +20,7 @@ RUN yum -y install openssh-server openldap openldap-clients nss-pam-ldapd authco
     ssh-keygen -q -N "" -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key && \
     ssh-keygen -A && \
     sed -i "s/#.*UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && \
-    sed -i "s/#.*UseDNS.*/UseDNS no/g" /etc/ssh/sshd_config && \
-    sed -i "s/#"
+    sed -i "s/#.*UseDNS.*/UseDNS no/g" /etc/ssh/sshd_config
 
 ADD scripts /root/.scripts
 RUN chmod +x /root/.scripts/*.sh
