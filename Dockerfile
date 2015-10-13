@@ -28,5 +28,5 @@ RUN chmod +x /root/.scripts/*.sh
 VOLUME [ "/sys/fs/cgroup" ]
 
 EXPOSE 22
-CMD ["/run.sh"]
+CMD ["/root/.scripts/run.sh"]
 
