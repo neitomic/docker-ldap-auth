@@ -8,6 +8,6 @@ if [ ! -f /.ldap_configured ]; then
 	/root/.scripts/config_ldap.sh
 fi
 
-exec /usr/sbin/init
+#exec /usr/sbin/init
 exec /usr/sbin/sshd -D
 exec /usr/sbin/nslcd

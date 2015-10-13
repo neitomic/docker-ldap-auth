@@ -13,7 +13,7 @@ sed -i "s/^#BASE.*/BASE ${LDAP_BASE}/" /etc/openldap/ldap.conf
 
 rm -rf /etc/pam.d/fingerprint-auth && cp /root/.scripts/templates/fingerprint-auth /etc/pam.d/
 rm -rf /etc/pam.d/password-auth && cp /root/.scripts/templates/password-auth /etc/pam.d/
-rm -rf /etc/pam.d/smartcart-auth && cp /root/.scripts/templates/smartcart-auth /etc/pam.d/
+rm -rf /etc/pam.d/smartcard-auth && cp /root/.scripts/templates/smartcard-auth /etc/pam.d/
 rm -rf /etc/pam.d/system-auth && cp /root/.scripts/templates/system-auth /etc/pamd.d/
 rm -rf /etc/nsswitch.conf && cp /root/.scripts/templates/nsswitch.conf /etc/
 
