@@ -9,5 +9,5 @@ if [ ! -f /.ldap_configured ]; then
 fi
 
 exec /usr/sbin/init
-exec /sbin/nslcd
 exec /usr/sbin/sshd -D
+exec /usr/sbin/nslcd

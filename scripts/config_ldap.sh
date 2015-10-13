@@ -5,7 +5,7 @@ if [ -f /.ldap_configured ]; then
 	exit 0
 fi
 
-LDAP_SERVER=${LDAP_SERVER:-172.28.182.2}
+LDAP_SERVER=${LDAP_SERVER:-104.197.60.37}
 LDAP_BASE=${LDAP_BASE:-dc=hpcc,dc=com}
 
 sed -i "s/^#URI.*/URI ldap:\/\/${LDAP_SERVER}/" /etc/openldap/ldap.conf
